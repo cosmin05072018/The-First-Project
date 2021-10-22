@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+body{
+    background-image: url(coolBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+img{
+    height: auto;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+h1{
+    display: flex;
+    justify-content:center ;
+}
+
+.container{
+    
+    max-width: 30%;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    padding: 25px 30px;
+    border-radius: 15px 50px;
+    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: linear-gradient(to right, #bbd2c5, #536976);
+    left: 0;
+    bottom: 0;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0px 12px 0px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 1s ease;
+}
+
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #5a464c;
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form .gender-details .category{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 14 px 0;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    border-radius:  50px;
+    background: #d9d9d9;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    border:  5px solid transparent;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #5a464c;
+}
+
+form input[type = "radio"]{
+    display: none;
+    padding-bottom: 200px;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+form .button input:hover{
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+
+.gender-title{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.reset{
+    color: #fff;
+    border-radius: 20px;
+    border-color: #2c3e50;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-left: 42.6%;
+    margin-top: 5%;
+}
+.reset:hover{
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+
+/*  inseram media query pentru a putea functiona aceasta pagina si pe diferite device-uri*/
+/*
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+}
+*/
