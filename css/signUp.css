@@ -14,7 +14,7 @@ body{
     overflow: hidden;
 }
 body{
-    background-image: url(coolBackground.jpg);
+    background-image: url(../images/coolBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
