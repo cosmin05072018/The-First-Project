@@ -1,25 +1,29 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: cursive;
 }
 
 body{
+    background-color: #5B8930;
     display: flex;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 700px;
+    max-width: 100%;
     overflow: hidden;
+    border: 5px solid #006442;;
 }
-body{
-    background-image: url(../images/coolBackground.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 img{
+    margin: 10px;
     height: auto;
     width: auto;
     display: block;
@@ -27,161 +31,109 @@ img{
     margin-right: auto;
     width: 50px;
 }
-h1{
-    display: flex;
-    justify-content:center ;
+
+.header{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    margin-top: 20px ;
 }
 
-.container{
-    
-    max-width: 30%;
-    background: linear-gradient(to right, #bdc3c7, #2c3e50);
-    padding: 25px 30px;
-    border-radius: 15px 50px;
-    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.2);
+.header h1{
+    margin: 0;
+    text-align: center;
 }
 
-.container .title{
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-}
-
-.container .title::before{
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 50px;
-    background: linear-gradient(to right, #bbd2c5, #536976);
-    left: 0;
-    bottom: 0;
-}
-
-.container form .user-details{
+.form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 30px 40px;
 }
 
-form .user-details .input-box{
-    width: calc(100% / 2 - 20px);
-    margin: 20px 0px 12px 0px;
-}
-
-.user-details .input-box input{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    border-radius: 15px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 1s ease;
-}
-
-.user-details .input-box .details{
-    font-weight: 500;
-    margin-bottom: 5px;
-    display: block;
-}
-
-.user-details .input-box input:focus,
-.user-details .input-box input:valid{
-    border-color: #5a464c;
-}
-
-form .gender-details .gender-title{
-    font-size: 20px;
-    font-weight: 500;
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-form .gender-details .category{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: 14 px 0;
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-.gender-details .category label{
-    display: flex;
-    align-items: center;
-}
-
-.gender-details .category .dot{
-    height: 18px;
-    width: 18px;
-    border-radius:  50px;
-    background: #d9d9d9;
-    margin-right: 10px;
-    transition: all 0.3s ease;
-    border:  5px solid transparent;
-}
-
-#dot-1:checked ~ .category label .one,
-#dot-2:checked ~ .category label .two,
-#dot-3:checked ~ .category label .three{
-    border-color: #d9d9d9;
-    background: #5a464c;
-}
-
-form input[type = "radio"]{
-    display: none;
-    padding-bottom: 200px;
-}
-
-form .button {
-    height: 45px;
-    margin: 45px 0;
-}
-
-form .button input{
-    height: 100%;
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    font-family: inherit;
     width: 100%;
-    outline: none;
+}
+
+.form-control.succes input{
+    border-color: #2ecc71;
+}
+
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i{
+    position: absolute;
+    top:35px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control.succes i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control small {
+    position: absolute;
+    visibility: hidden;
+    bottom: 1px;
+    left: 10px;
+    font-size: 14px;
+}
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+    top: 65px;
+}
+
+.submit{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
     color: #fff;
-    background: linear-gradient(to right, #bdc3c7, #2c3e50);;
-    border-radius: 20px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-}
-
-form .button input:hover{
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);
-}
-
-.gender-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    width: 50%;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 4px;
+    margin-left: 25%;
 }
 
 .reset{
-    color: #fff;
-    border-radius: 20px;
-    border-color: #2c3e50;
-    background: linear-gradient(to right, #bdc3c7, #2c3e50);
-    width: 60px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    margin-left: 42.6%;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
     margin-top: 5%;
+    margin-bottom: 10%;
+    border: 2px solid #8e44ad;
 }
-.reset:hover{
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);
-}
-
-/*  inseram media query pentru a putea functiona aceasta pagina si pe diferite device-uri*/
-/*
-@media (max-width: 584px){
-    .container{
-        max-width: 100%;
-    }
-}
-*/
