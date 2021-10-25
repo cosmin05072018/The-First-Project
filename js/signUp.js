@@ -99,3 +99,19 @@ function isEmail(email){
 function isPassword(password){
     return /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password);
 }
+
+let fName = document.getElementById("fname");
+let lName = document.getElementById("lname");
+let userName = document.getElementById("username");
+let emaiL = document.getElementById("email");
+let passworD = document.getElementById("password");
+let passworD2 = document.getElementById("password2");
+let button = document.getElementById("save")
+button.onclick = function (){
+    localStorage.setItem("First Name", fName.value)
+    localStorage.setItem("Last Name", lName.value)
+    localStorage.setItem("Usermame", userName.value)
+    localStorage.setItem("Email", emaiL.value)
+    localStorage.setItem("Password", passworD.value)
+    localStorage.setItem("Confirm password", passworD2.value)
+}

@@ -123,6 +123,7 @@ img{
     font-family: inherit;
     border-radius: 4px;
     margin-left: 25%;
+    cursor: pointer;
 }
 
 .reset{
@@ -136,4 +137,5 @@ img{
     margin-top: 5%;
     margin-bottom: 10%;
     border: 2px solid #8e44ad;
+    cursor: pointer;
 }
