@@ -26,17 +26,9 @@ if(name != null){  //sign up page
     } else {
         //submit form
         loader.style.display = 'block';
-        window.location="../html/homePage.html";
+        window.location="../html/login.html";
     }
-} else{
-    //login page
-    if(!email.value.length || !password.value.length){
-        showAlert('fill all the inputs');
-    } else{
-        loader.style.display = 'block';
-        window.location="../html/homePage.html";
-    }
-}
+} 
 })
 
 //alert function 
