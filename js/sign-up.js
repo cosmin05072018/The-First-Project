@@ -2,7 +2,6 @@ function saveData (){
     let namE, emaiL, passworD;
 
     namE = document.querySelector('#name').value;
-    namE2 = document.querySelector('#name2').value;
     emaiL = document.querySelector('#email').value;
     passworD = document.querySelector('#password').value;
 
