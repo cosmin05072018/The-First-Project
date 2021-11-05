@@ -1,10 +1,7 @@
 const form = document.getElementById("form");
-const fname = document.getElementById("fname");
-const lname = document.getElementById("lname");
 const username = document.getElementById("username");
-const email = document.getElementById("email");
 const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
+
 
 const loader = document.querySelector('.loader');
 
@@ -17,33 +14,8 @@ form.addEventListener('submit', (e) => {
 
 function checkInputs(){
     //get the values from the inputs
-    const fnameValue = fname.value.trim();
-    const lnameValue = lname.value.trim();
     const usernameValue = username.value.trim();
-    const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
-
-    
-        if (fnameValue ===''){
-            setErrorFor(fname, 'Required field.');
-        }        
-        else if(fnameValue.length < 3){
-            setErrorFor(fname, 'First must contain at least 3 letters');
-        }       
-        else {
-            setSuccesFor(fname);
-        }
-
-        if (lnameValue ===''){
-            setErrorFor(lname, 'Required field.');
-        }        
-        else if(lnameValue.length < 3){
-            setErrorFor(lname, 'First must contain at least 3 letters');
-        }       
-        else {
-            setSuccesFor(lname);
-        }
 
 
         if(usernameValue === '') {
@@ -55,13 +27,6 @@ function checkInputs(){
         else {
             setSuccesFor(username);
         }
-        if (emailValue === '') {
-            setErrorFor(email, 'Required field.');
-        } else if(!isEmail(emailValue)) {
-            setErrorFor(email, 'Email is not valid')
-        } else{
-            setSuccesFor(email);
-        }
         if (passwordValue === '') {
             setErrorFor(password, 'Required field.');
         } else if(!isPassword(passwordValue)) {
@@ -72,19 +37,11 @@ function checkInputs(){
         }
         else {
             setSuccesFor(password);
-        }
-        if (password2Value === '') {
-            setErrorFor(password2, 'Required field.');
-    }   else if(passwordValue != password2Value) {
-            setErrorFor(password2, 'Passwords does not match')
-    }   else {
-            setSuccesFor(password2);
             loader.style.display = 'block';
             setTimeout(() => {
-            window.location="../html/signIn.html";
+            window.location="../html/homePage.html";
             }, 3000);
-            
-    }
+        }
     }
 
 function setErrorFor(input, message){
