@@ -1,0 +1,12 @@
+cart1 => https://www.aboutyou.ro/p/jack-jones/jacheta-fleece-willi-6953078
+cart2 => https://www.aboutyou.ro/p/jack-jones/tricou-1989377
+cart3 => https://www.aboutyou.ro/p/jack-jones/tricou-boro-3463955
+cart4 => https://www.aboutyou.ro/p/only-sons/jeans-ply-6577557
+cart5 => https://www.aboutyou.ro/p/jack-jones/cama-a-jprblasummer-6545178
+cart6 => https://www.aboutyou.ro/p/jack-jones/cama-a-6704546
+cart7 => https://www.aboutyou.ro/p/dan-fox-apparel/tricou-carl-6546534
+cart8 => https://www.aboutyou.ro/p/jack-jones/tricou-1989382
+cart9 => https://www.aboutyou.ro/p/jack-jones/hanorac-jjeholmen-3939151
+cart10 => https://www.aboutyou.ro/p/tommy-jeans/hanorac-6914360
+cart11 => https://www.aboutyou.ro/p/tommy-jeans/cama-a-7031507
+cart12 => https://www.aboutyou.ro/p/tommy-jeans/tricou-6946049
