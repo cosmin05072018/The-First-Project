@@ -94,7 +94,7 @@ img{
 
 .form-control i{
     position: absolute;
-    top:35px;
+    top: 40px;
     right: 10px;
     visibility: hidden;
 }
@@ -119,7 +119,6 @@ img{
 .form-control.error small {
     visibility: visible;
     color: #e74c3c;
-    top: 65px;
 }
 
 .submit-btn{
