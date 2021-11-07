@@ -1,12 +1,47 @@
 cart1 => https://www.aboutyou.ro/p/jack-jones/jacheta-fleece-willi-6953078
+	Jachetă fleece 'WILLI'
+	20$
+
 cart2 => https://www.aboutyou.ro/p/jack-jones/tricou-1989377
+	Tricou
+	13$
+
 cart3 => https://www.aboutyou.ro/p/jack-jones/tricou-boro-3463955
+	Tricou 'BORO'
+	26$
+
 cart4 => https://www.aboutyou.ro/p/only-sons/jeans-ply-6577557
+	Jeans 'Ply'
+	33$
+
 cart5 => https://www.aboutyou.ro/p/jack-jones/cama-a-jprblasummer-6545178
+	Cămașă 'JPRBLASUMMER'
+	30$
+
 cart6 => https://www.aboutyou.ro/p/jack-jones/cama-a-6704546
+	Cămașă
+	$18
+
 cart7 => https://www.aboutyou.ro/p/dan-fox-apparel/tricou-carl-6546534
+	Tricou 'Carl'
+	15$
+
 cart8 => https://www.aboutyou.ro/p/jack-jones/tricou-1989382
+	Tricou
+	14$
+
 cart9 => https://www.aboutyou.ro/p/jack-jones/hanorac-jjeholmen-3939151
+	Hanorac 'JJEHOLMEN'
+	20$
+
 cart10 => https://www.aboutyou.ro/p/tommy-jeans/hanorac-6914360
+	Hanorac
+	26$	
+
 cart11 => https://www.aboutyou.ro/p/tommy-jeans/cama-a-7031507
+	Cămașă
+	14$
+
 cart12 => https://www.aboutyou.ro/p/tommy-jeans/tricou-6946049
+	Tricou
+	10$

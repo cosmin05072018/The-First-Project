@@ -1,12 +1,47 @@
 cart1 => https://www.aboutyou.ro/p/mister-tee/bluza-de-molton-black-cat-5087792
+	Bluză de molton 'Black Cat'
+	12$
+
 cart2 => https://www.aboutyou.ro/p/nike-sportswear/geaca-de-primavara-toamna-7148544
+	Geacă de primăvară-toamnă
+	39$
+
 cart3 => https://www.aboutyou.ro/p/nike-sportswear/hanorac-4319750
+	Hanorac
+	22$
+
 cart4 => https://www.aboutyou.ro/p/nike-sportswear/hanorac-club-4527775
+	Hanorac 'Club'
+	30$
+
 cart5 => https://www.aboutyou.ro/p/nike-sportswear/tricou-futura-4323678
+	Tricou 'Futura'
+	43$
+
 cart6 => https://www.aboutyou.ro/p/nike-sportswear/tricou-jumbo-futura-tee-4568815
+	Tricou ' JUMBO FUTURA TEE'
+	15$
+
 cart7 => https://www.aboutyou.ro/p/nike-sportswear/pantaloni-4327389
+	Pantaloni
+	14$
+
 cart8 => https://www.aboutyou.ro/p/nike-sportswear/pantaloni-5907898
+	Pantaloni
+	13$
+
 cart9 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/pantaloni-6903744
+	Pantaloni
+	18$
+
 cart10 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/pantaloni-sport-7082157
+	Pantaloni sport
+	12$
+
 cart11 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/orturi-de-baie-4682944
+	Șorturi de baie
+	10$
+
 cart12 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/tricou-4631740
+	Tricou
+	11$
