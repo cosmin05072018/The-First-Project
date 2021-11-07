@@ -1,0 +1,13 @@
+cart1 => https://www.aboutyou.ro/p/edited-the-label/rochie-gemma-5605752;
+cart2 => https://www.aboutyou.ro/p/edited/rochie-whitney-6953424
+cart3 => https://www.aboutyou.ro/p/edited/rochie-sloane-6762061
+cart4 => https://www.aboutyou.ro/p/twist-tango/rochie-alianna-5675595
+cart5 => https://www.aboutyou.ro/p/twist-tango/rochie-tip-bluza-sania-5675675
+cart6 => https://www.aboutyou.ro/p/twist-tango/rochie-eira-5883285
+cart7 => https://www.aboutyou.ro/p/twist-tango/jeans-5675767
+cart8 => https://www.aboutyou.ro/p/mango/pantaloni-francis-6699570
+cart9 => https://www.aboutyou.ro/p/mango/jeans-mom-80-4661545
+cart10 => https://www.aboutyou.ro/p/edited/bluza-kendra-4161224
+cart11 => https://www.aboutyou.ro/p/edited/bluza-kendra-5881625
+cart12 => https://www.aboutyou.ro/p/edited/tricou-katja-3922252
+
