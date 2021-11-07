@@ -1,2 +1,5 @@
 let carts = document.querySelectorAll('.card-btn');
-console.log(carts);
+
+for (let i=0; i < carts.length; i++) {
+    console.log('asdasdasd');
+}
