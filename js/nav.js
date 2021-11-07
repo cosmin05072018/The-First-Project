@@ -14,11 +14,11 @@ const createNav = () =>{
                 <button class="btn" id="user-btn">Log out</button>
              </div>
         </a>
-        <a href="#"><img src="../images/cart.png" alt=""></a>
+        <a href="shoppingCart.html"><img src="../images/cart.png" alt=""></a>
     </div>
 </div>
 <ul class="links-container">
-    <li class="link-item"><a href="#" class="link">home</a></li>
+    <li class="link-item"><a href="homePage.html" class="link">home</a></li>
     <li class="link-item"><a href="#" class="link">women</a></li>
     <li class="link-item"><a href="#" class="link">men</a></li>
     <li class="link-item"><a href="#" class="link">kids</a></li>
