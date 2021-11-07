@@ -1,0 +1,12 @@
+cart1 => https://www.aboutyou.ro/p/mister-tee/bluza-de-molton-black-cat-5087792
+cart2 => https://www.aboutyou.ro/p/nike-sportswear/geaca-de-primavara-toamna-7148544
+cart3 => https://www.aboutyou.ro/p/nike-sportswear/hanorac-4319750
+cart4 => https://www.aboutyou.ro/p/nike-sportswear/hanorac-club-4527775
+cart5 => https://www.aboutyou.ro/p/nike-sportswear/tricou-futura-4323678
+cart6 => https://www.aboutyou.ro/p/nike-sportswear/tricou-jumbo-futura-tee-4568815
+cart7 => https://www.aboutyou.ro/p/nike-sportswear/pantaloni-4327389
+cart8 => https://www.aboutyou.ro/p/nike-sportswear/pantaloni-5907898
+cart9 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/pantaloni-6903744
+cart10 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/pantaloni-sport-7082157
+cart11 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/orturi-de-baie-4682944
+cart12 => https://www.aboutyou.ro/p/champion-authentic-athletic-apparel/tricou-4631740
