@@ -1,0 +1,12 @@
+cart1 => https://www.aboutyou.ro/p/ray-ban/ochelari-de-soare-6620923
+cart2 => https://www.aboutyou.ro/p/adidas-originals/rucsac-6726764
+cart3 => https://www.aboutyou.ro/p/adidas-originals/geanta-6738522
+cart4 => https://www.aboutyou.ro/p/adidas-originals/sneaker-gazelle-4112009
+cart5 => https://www.aboutyou.ro/p/calvin-klein-jeans/geanta-6839925
+cart6 => https://www.aboutyou.ro/p/calvin-klein-jeans/geanta-6839891
+cart7 => https://www.aboutyou.ro/p/tommy-hilfiger/fular-7084450
+cart8 => https://www.aboutyou.ro/p/tommy-hilfiger/fular-7085198
+cart9 => https://www.aboutyou.ro/p/burton/caciuli-sport-walden-7176194
+cart10 => https://www.aboutyou.ro/p/burton/manu-i-sport-grommitt-mittens-7183197
+cart11 => https://www.aboutyou.ro/p/blue-seven/caciula-7133731
+cart12 => https://www.aboutyou.ro/p/polo-ralph-lauren/palarie-cotton-clsc-cap-ac-hat-4323410
