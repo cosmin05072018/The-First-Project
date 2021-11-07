@@ -4,7 +4,7 @@
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/imageBackground/man-adjusts-his-shirt-cuffs-below-watch_1512x.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -18,9 +18,9 @@
 }
 
 .hero-section .sub-heading{
-    margin-top: 10px ;
     text-align: center;
-    color: #fff;
+    background-color: #efefef;
+    color: #383838;
     text-transform: capitalize;
     font-size: 35px;
     font-weight: 300;
@@ -180,14 +180,14 @@ transform: rotate(180deg);
 
 .collection img{
     width: 100%;
-    height: 100%;
-    object-fit: cover
+    height: 100vh;
+    object-fit: cover;
 }
 
 .collection p{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 1%;
+    left: 70%;
     transform: translateX(-50%, -50%);
     text-align: center;
     color: #fff;
