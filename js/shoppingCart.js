@@ -17,6 +17,12 @@ let products = [
     },
     {
         collection: "women",
+        name: "Rochie 'Sloane'",
+        price: 30,
+        inCart: 0 
+    },
+    {
+        collection: "women",
         name: "Rochie 'ALIANNA'",
         price: 30,
         inCart: 0 
@@ -80,13 +86,13 @@ let products = [
     },
     {
         collection: "men",
-        name: "Tricou",
+        name: "Tricou negru",
         price: 13,
         inCart: 0 
     },
     {
         collection: "men",
-        name: "Tricou ",
+        name: "Tricou 'BORO'",
         price: 26,
         inCart: 0 
     },
@@ -104,7 +110,7 @@ let products = [
     },
     {
         collection: "men",
-        name: "Cămașă",
+        name: "Camasa de vara",
         price: 18,
         inCart: 0 
     },
@@ -116,7 +122,7 @@ let products = [
     },
     {
         collection: "men",
-        name: "Tricou",
+        name: "Tricou Kan",
         price: 14,
         inCart: 0 
     },
@@ -134,13 +140,13 @@ let products = [
     },
     {
         collection: "men",
-        name: "Cămașă",
+        name: "Camasa king",
         price: 14,
         inCart: 0 
     },
     {
         collection: "men",
-        name: "Tricou",
+        name: "Tricou black",
         price: 10,
         inCart: 0 
     },
@@ -184,19 +190,19 @@ let products = [
     },
     {
         collection: "kids",
-        name: "Pantaloni",
+        name: "Pantaloni nike",
         price: 14,
         inCart: 0 
     },
     {
         collection: "kids",
-        name: "Pantaloni",
+        name: "Pantaloni negri",
         price: 13,
         inCart: 0 
     },
     {
         collection: "kids",
-        name: "Pantaloni",
+        name: "Pantaloni gri",
         price: 18,
         inCart: 0 
     },
@@ -247,19 +253,19 @@ let products = [
     },
     {
         collection: "accessories",
-        name: "Geantă",
+        name: "Geantă CALVIN KLEIN",
         price: 11,
         inCart: 0 
     },
     {
         collection: "accessories",
-        name: "Geantă",
+        name: "Geantă cK",
         price: 14,
         inCart: 0 
     },
     {
         collection: "accessories",
-        name: "Fular",
+        name: "Fular gri",
         price: 18,
         inCart: 0 
     },
@@ -297,7 +303,8 @@ let products = [
 
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cartNumbers();
+        cartNumbers(products[i]);
+        totalCost(products[i]);
     })
 }
 
@@ -309,7 +316,7 @@ function onLoadCartNumbers() {
    }
 }
 
-function cartNumbers() {
+function cartNumbers(product) {
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
     
@@ -320,6 +327,49 @@ function cartNumbers() {
         localStorage.setItem('cartNumbers', 1);
         document.getElementById('span').textContent = 1;
     }
+    setItems(product);
+}
+
+
+function setItems(product){
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    if(cartItems != null){
+        if(cartItems[product.name] == undefined){
+            cartItems = {
+                ...cartItems,
+                [product.name]: product
+            }
+        }
+        cartItems[product.name].inCart +=1;
+    } else{
+        product.inCart = 1;
+    cartItems = {
+        [product.name]: product
+    }
+    
+    }
+    
+    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+    
+}
+
+function totalCost(product){
+    //console.log('produsul costa', product.price);
+    
+    let cartCost = localStorage.getItem('totalCost');
+    console.log('My cart cost is', cartCost);
+    console.log(typeof(cartCost));
+
+    if(cartCost != null){
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price)
+    }else{
+        localStorage.setItem("totalCost", product.price)
+    }
+
+
 }
 
 onLoadCartNumbers();
