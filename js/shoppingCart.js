@@ -297,6 +297,29 @@ let products = [
 
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        console.log('a fost adaugat');
+        cartNumbers();
     })
 }
+
+function onLoadCartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+
+    if(productNumbers){
+        document.getElementById('span').textContent=productNumbers;
+   }
+}
+
+function cartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+    
+    if(productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.getElementById('span').textContent=productNumbers + 1;
+    }  else{
+        localStorage.setItem('cartNumbers', 1);
+        document.getElementById('span').textContent = 1;
+    }
+}
+
+onLoadCartNumbers();
