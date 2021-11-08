@@ -1,12 +1,47 @@
 cart1 => https://www.aboutyou.ro/p/ray-ban/ochelari-de-soare-6620923
+	Ochelari de soare
+	10$
+
 cart2 => https://www.aboutyou.ro/p/adidas-originals/rucsac-6726764
+	Rucsac
+	14$
+
 cart3 => https://www.aboutyou.ro/p/adidas-originals/geanta-6738522
+	Geantă
+	16$
+
 cart4 => https://www.aboutyou.ro/p/adidas-originals/sneaker-gazelle-4112009
+	Sneaker 'Gazelle'
+	15$
+
 cart5 => https://www.aboutyou.ro/p/calvin-klein-jeans/geanta-6839925
+	Geantă
+	11$
+
 cart6 => https://www.aboutyou.ro/p/calvin-klein-jeans/geanta-6839891
+	Geantă
+	14$
+
 cart7 => https://www.aboutyou.ro/p/tommy-hilfiger/fular-7084450
+	Fular
+	18$
+
 cart8 => https://www.aboutyou.ro/p/tommy-hilfiger/fular-7085198
+	Fular
+	17$
+
 cart9 => https://www.aboutyou.ro/p/burton/caciuli-sport-walden-7176194
+	Căciuli sport 'Walden'
+	24$
+	
 cart10 => https://www.aboutyou.ro/p/burton/manu-i-sport-grommitt-mittens-7183197
+	Mănuși sport 'Grommitt Mittens'
+	20$
+
 cart11 => https://www.aboutyou.ro/p/blue-seven/caciula-7133731
+	Căciulă
+	16$
+
 cart12 => https://www.aboutyou.ro/p/polo-ralph-lauren/palarie-cotton-clsc-cap-ac-hat-4323410
+	Pălărie 'COTTON-CLSC CAP-AC-HAT'
+	11$
