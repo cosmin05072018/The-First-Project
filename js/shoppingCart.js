@@ -177,84 +177,84 @@ let products = [
 
     //for kids
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Bluză de molton 'Black Cat'",
         price: 12,
         inCart: 0,
         imgSourceName: "cart25"  
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Geacă de primăvară-toamnă",
         price: 39,
         inCart: 0,
         imgSourceName: "cart26"  
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Hanorac",
         price: 22,
         inCart: 0,
         imgSourceName: "cart27"  
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Hanorac 'Club'",
         price: 30,
         inCart: 0,
         imgSourceName: "cart28"  
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Tricou 'Futura'",
         price: 43,
         inCart: 0,
         imgSourceName: "cart29"  
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Tricou ' JUMBO FUTURA TEE'",
         price: 15,
         inCart: 0,
         imgSourceName: "cart30"  
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Pantaloni nike",
         price: 14,
         inCart: 0,
         imgSourceName: "cart31"   
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Pantaloni negri",
         price: 13,
         inCart: 0,
         imgSourceName: "cart32"   
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Pantaloni gri",
         price: 18,
         inCart: 0,
         imgSourceName: "cart33"   
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Pantaloni sport",
         price: 12,
         inCart: 0,
         imgSourceName: "cart34"   
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Șorturi de baie",
         price: 10,
         inCart: 0,
         imgSourceName: "cart35"   
     },
     {
-        collection: "imbracaminteCopii",
+        collection: "Kids",
         name: "Tricou",
         price: 11,
         inCart: 0,
@@ -418,7 +418,6 @@ function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector('.products-container');
-    let cartCost = localStorage.getItem('totalCost');
 
     if(cartItems && productContainer){
        productContainer.innerHTML = '';
@@ -426,11 +425,11 @@ function displayCart(){
         productContainer.innerHTML += `
             <div class="product">
             <ion-icon name="close-circle-outline"></ion-icon>
-            <img src="../images/${item.collection}/${item.imgSourceName}.jpg">
+            <img src="../images/${item.collection}/${item.imgSourceName}.png">
             <span>${item.name}</span>
             </div>
         `;
-        console.log(productContainer.innerHTML );
+        console.log(productContainer.innerHTML);
        });
 
     }
