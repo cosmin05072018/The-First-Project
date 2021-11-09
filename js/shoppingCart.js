@@ -417,20 +417,45 @@ function totalCost(product){
 function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector('.products-container');
+    let productContainer = document.querySelector('.products');
+    let cartCost = localStorage.getItem('totalCost');
 
     if(cartItems && productContainer){
        productContainer.innerHTML = '';
        Object.values(cartItems).map(item =>{
         productContainer.innerHTML += `
-            <div class="product">
+            <div class ="shoppingCartCSS">
+            <div id = "product-title" class="product">
             <ion-icon name="close-circle-outline"></ion-icon>
-            <img src="../images/${item.collection}/${item.imgSourceName}.png">
+            <img class="imgShoppingCart" src="../images/${item.collection}/${item.imgSourceName}.png">
             <span>${item.name}</span>
+            </div>
+
+            <div  id = "product-container" class="price-product">${item.price}</div>
+            
+            <div id="quatity-product" class="quantity-product">
+            <ion-icon name="arrow-back-circle-outline"></ion-icon><span class="spanInCart">${item.inCart}</span><ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </div>
+
+            <div id ="total" class="total">
+            ${item.inCart * item.price}
+            </div>
+
             </div>
         `;
         console.log(productContainer.innerHTML);
        });
+
+        productContainer.innerHTML +=`
+        <div class="basketTotalContainer">
+            <h4 class="basketTotalTitle">
+            basket Total
+            </h4>
+            <h4 class="basketTotal">
+            $${cartCost},00
+            </h4>
+        </div>
+        `
 
     }
 }

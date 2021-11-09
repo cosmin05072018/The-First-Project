@@ -23,8 +23,8 @@
 }
 
 .price-product {
+   
     width: 15%;
-    
     display: flex;
     align-items: center;
 }
@@ -39,7 +39,7 @@
 
 .total {
     width: 10%;
-    border-bottom: 1px solid #b9b7b7;
+    
     display: flex;
     align-items: center;
 }
@@ -51,4 +51,41 @@
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #b9b7b7;
+}
+
+.products-container ion-icon {
+    font-size: 20px;
+    color: #eb0b0b;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.imgShoppingCart{
+    width: 30%;
+}
+
+
+.shoppingCartCSS {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#total{
+    margin-left: 120px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
 }
