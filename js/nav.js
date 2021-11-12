@@ -19,7 +19,7 @@ const createNav = () =>{
 </div>
 <ul class="links-container">
     <li class="link-item"><a href="homePage.html" class="link">home</a></li>
-    <li class="link-item"><a href="#" class="link">women</a></li>
+    <li class="link-item"><a href="productsWomen.html" class="link">women</a></li>
     <li class="link-item"><a href="#" class="link">men</a></li>
     <li class="link-item"><a href="#" class="link">kids</a></li>
     <li class="link-item"><a href="#" class="link">accessories</a></li>
@@ -68,3 +68,18 @@ function saveData (){
 let nameFromLocalStorage = JSON.parse(localStorage.getItem("user"));
 document.getElementById('result').innerHTML=(nameFromLocalStorage[0].lastName);
 
+
+
+const searchBtn = document.querySelector('.search-btn');
+const searchBox = document.querySelector('.search-box');
+
+searchBtn.addEventListener('click', (e) =>{
+   
+    if(searchBox.value.length){
+        e.preventDefault();
+        location.href="../html/search.html"
+        
+    }
+    
+}
+)
