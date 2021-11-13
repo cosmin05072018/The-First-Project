@@ -42,7 +42,6 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 1px solid #d1d1d1;
-    text-transform: capitalize;
     background: none;
     color: #a9a9a9;
     outline: none;
@@ -57,7 +56,6 @@
     cursor: pointer;
     background: #383838;
     color: #fff;
-    text-transform: capitalize;
     font-size: 15px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -92,7 +90,7 @@
     margin: 0 5px;
     text-decoration:none;
     color: #383838;
-    opacity: 0.5;
+
     transition: .5s;
 }
 
@@ -133,7 +131,6 @@ span{
 
 .account-info{
     font-size: 20px;
-    text-transform: capitalize;
 }
 
 #user-btn{
@@ -158,4 +155,13 @@ span{
     color: #383838;
 }
 
-/*#result::before, #result::after{ content:'none';}
+/*#result::before, #result::after{ content:'none';} */
+
+#list{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: none;
+}
+
+  
+

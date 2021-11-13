@@ -4,19 +4,22 @@ const createNav = () =>{
     <img src="../images/job551-namcha-17.jpg" alt="" class="brand-logo">
     <div class="nav-items">
         <div class="search">
-            <input type="text" class="search-box" placeholder="search brand, product">
+            <input type="text" autocomplete = "off" class="search-box" placeholder="Search..." id="search">
             <button class="search-btn">search</button>
-        </div>
+            <ul class="list-group" id ="list"></ul>
+            </div>
         <a>
             <img src="../images/user.png" id="user-img" alt="">
              <div class="login-logout-popup hide">
-                <p class="account-info">Log in as <span id="result"></span></p>
+                <p class="account-info">Hello,  <span id="result"></span></p>
                 <button class="btn" id="user-btn">Log out</button>
              </div>
         </a>
         <a href="shoppingCart.html"><img src="../images/cart.png" alt=""></a> <span id="span">0</span>
-    </div>
+        
+        </div>
 </div>
+
 <ul class="links-container">
     <li class="link-item"><a href="homePage.html" class="link">home</a></li>
     <li class="link-item"><a href="productsWomen.html" class="link">women</a></li>
@@ -69,7 +72,7 @@ let nameFromLocalStorage = JSON.parse(localStorage.getItem("user"));
 document.getElementById('result').innerHTML=(nameFromLocalStorage[0].lastName);
 
 
-
+/*
 const searchBtn = document.querySelector('.search-btn');
 const searchBox = document.querySelector('.search-box');
 
@@ -83,3 +86,4 @@ searchBtn.addEventListener('click', (e) =>{
     
 }
 )
+*/
