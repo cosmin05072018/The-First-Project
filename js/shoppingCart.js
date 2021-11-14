@@ -265,7 +265,7 @@ let products = [
     //for accessories
     {
         collection: "accessories",
-        name: "Ochelari de soare",
+        name: "Natural Wood Coaster Set Blue",
         price: 10,
         inCart: 0,
         imgSourceName: "cart37"   
@@ -279,14 +279,14 @@ let products = [
     },
     {
         collection: "accessories",
-        name: "Geantă",
+        name: "Scallop edge cushion cover blue",
         price: 16,
         inCart: 0,
         imgSourceName: "cart39"   
     },
     {
         collection: "accessories",
-        name: "Sneaker 'Gazelle'",
+        name: "Rainbow wave embroidered slippers multi",
         price: 15,
         inCart: 0,
         imgSourceName: "cart40"   
@@ -300,35 +300,35 @@ let products = [
     },
     {
         collection: "accessories",
-        name: "Geantă cK",
+        name: "Comforter",
         price: 14,
         inCart: 0,
         imgSourceName: "cart42"  
     },
     {
         collection: "accessories",
-        name: "Fular gri",
+        name: "Zebra wash bag wwf collaboration",
         price: 18,
         inCart: 0,
         imgSourceName: "cart43"  
     },
     {
         collection: "accessories",
-        name: "Fular",
+        name: "Hat",
         price: 17,
         inCart: 0,
         imgSourceName: "cart44"  
     },
     {
         collection: "accessories",
-        name: "Căciuli sport 'Walden'",
+        name: "Storage bag",
         price: 24,
         inCart: 0,
         imgSourceName: "cart45"  
     },
     {
         collection: "accessories",
-        name: "Mănuși sport 'Grommitt Mittens'",
+        name: "Natural wood coaster set yellow",
         price: 20,
         inCart: 0,
         imgSourceName: "cart46"  
@@ -348,6 +348,9 @@ let products = [
         imgSourceName: "cart48"  
     }
 ]
+
+// start add to cart
+
 
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
@@ -414,14 +417,14 @@ function totalCost(product){
     }
 }
 
-function displayCart(){
+function shoppingCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector('.products');
     let cartCost = localStorage.getItem('totalCost');
 
     if(cartItems && productContainer){
-       productContainer.innerHTML = '';
+       productContainer.innerHTML = 'Shopping Cart:';
        Object.values(cartItems).map(item =>{
         productContainer.innerHTML += `
             <div class ="shoppingCartCSS">
@@ -431,19 +434,18 @@ function displayCart(){
             <span>${item.name}</span>
             </div>
 
-            <div  id = "product-container" class="price-product">${item.price}</div>
+            <div  id = "product-container" class="price-product">$${item.price},00</div>
             
             <div id="quatity-product" class="quantity-product">
             <ion-icon name="arrow-back-circle-outline"></ion-icon><span class="spanInCart">${item.inCart}</span><ion-icon name="arrow-forward-circle-outline"></ion-icon>
             </div>
 
             <div id ="total" class="total">
-            ${item.inCart * item.price}
+            $${item.inCart * item.price},00
             </div>
 
             </div>
         `;
-        console.log(productContainer.innerHTML);
        });
 
         productContainer.innerHTML +=`
@@ -456,9 +458,13 @@ function displayCart(){
             </h4>
         </div>
         `
-
     }
 }
 
 onLoadCartNumbers();
-displayCart();
+shoppingCart();
+
+// stop add to cart
+
+// start add to wishList
+

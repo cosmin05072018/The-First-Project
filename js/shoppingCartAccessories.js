@@ -4,7 +4,7 @@ let products = [
 
     {
         collection: "accessories",
-        name: "Ochelari de soare",
+        name: "Natural Wood Coaster Set Blue",
         price: 10,
         inCart: 0,
         imgSourceName: "cart37"   
@@ -18,14 +18,14 @@ let products = [
     },
     {
         collection: "accessories",
-        name: "Geantă",
+        name: "Scallop edge cushion cover blue",
         price: 16,
         inCart: 0,
         imgSourceName: "cart39"   
     },
     {
         collection: "accessories",
-        name: "Sneaker 'Gazelle'",
+        name: "Rainbow wave embroidered slippers multi",
         price: 15,
         inCart: 0,
         imgSourceName: "cart40"   
@@ -39,35 +39,35 @@ let products = [
     },
     {
         collection: "accessories",
-        name: "Geantă cK",
+        name: "Comforter",
         price: 14,
         inCart: 0,
         imgSourceName: "cart42"  
     },
     {
         collection: "accessories",
-        name: "Fular gri",
+        name: "Zebra wash bag wwf collaboration",
         price: 18,
         inCart: 0,
         imgSourceName: "cart43"  
     },
     {
         collection: "accessories",
-        name: "Fular",
+        name: "Hat",
         price: 17,
         inCart: 0,
         imgSourceName: "cart44"  
     },
     {
         collection: "accessories",
-        name: "Căciuli sport 'Walden'",
+        name: "Storage bag",
         price: 24,
         inCart: 0,
         imgSourceName: "cart45"  
     },
     {
         collection: "accessories",
-        name: "Mănuși sport 'Grommitt Mittens'",
+        name: "Natural wood coaster set yellow",
         price: 20,
         inCart: 0,
         imgSourceName: "cart46"  
