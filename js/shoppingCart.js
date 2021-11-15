@@ -383,7 +383,7 @@ function cartNumbers(product) {
 
 
 function setItems(product){
-    let cartItems = localStorage.getItem('productsInCart');
+    let cartItems = localStorage.getItem('productsInShoppingCart');
     cartItems = JSON.parse(cartItems);
 
     if(cartItems != null){
@@ -401,7 +401,7 @@ function setItems(product){
     }
     }
     
-    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+    localStorage.setItem("productsInShoppingCart", JSON.stringify(cartItems));
 }
 
 function totalCost(product){
@@ -418,7 +418,7 @@ function totalCost(product){
 }
 
 function shoppingCart(){
-    let cartItems = localStorage.getItem("productsInCart");
+    let cartItems = localStorage.getItem("productsInShoppingCart");
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector('.products');
     let cartCost = localStorage.getItem('totalCost');
@@ -464,7 +464,61 @@ function shoppingCart(){
 onLoadCartNumbers();
 shoppingCart();
 
-// stop add to cart
+// stop add to shoppingCart
 
 // start add to wishList
+//carts
+
+let wishList = document.querySelectorAll('.card-wishlist');
+
+for (let i=0; i < wishList.length; i++) {
+    wishList[i].addEventListener('click', () => {
+        cartNumbers(products[i]);
+        totalCost(products[i]);
+    })
+}
+
+function onLoadCartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbersWishList');
+
+    if(productNumbers){
+        document.getElementById('span').textContent=productNumbers;
+   }
+}
+
+function cartNumbers(product) {
+    let productNumbers = localStorage.getItem('cartNumbersWishList');
+    productNumbers = parseInt(productNumbers);
+    
+    if(productNumbers) {
+        localStorage.setItem('cartNumbersWishList', productNumbers + 1);
+        document.getElementById('span').textContent=productNumbers + 1;
+    }  else{
+        localStorage.setItem('cartNumbersWishList', 1);
+        document.getElementById('span').textContent = 1;
+    }
+    setItems(product);
+}
+
+function setItems(product){
+    let cartItems = localStorage.getItem('productsInWishList');
+    cartItems = JSON.parse(cartItems);
+
+    if(cartItems != null){
+        if(cartItems[product.name] == undefined){
+            cartItems = {
+                ...cartItems,
+                [product.name]: product
+            }
+        }
+        cartItems[product.name].inCart +=1;
+    } else{
+        product.inCart = 1;
+    cartItems = {
+        [product.name]: product
+    }
+    }
+    
+    localStorage.setItem("productsInWishList", JSON.stringify(cartItems));
+}
 
