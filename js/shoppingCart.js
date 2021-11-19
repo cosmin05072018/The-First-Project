@@ -428,20 +428,20 @@ function shoppingCart(){
         productContainer.innerHTML += `
         <h1>Shopping Cart</h1>
             <div class ="shoppingCartCSS">
-            <div id = "product-title" class="product">
+            <div id = "${item.imgSourceName}" class="product" >
             <ion-icon class="delete" name="close-circle-outline"></ion-icon>
             <img class="imgShoppingCart" src="../images/${item.collection}/${item.imgSourceName}.png">
             <span>${item.name}</span>
             </div>
 
-            <div  id = "product-container" class="price-product">$${item.price},00</div>
+            <div  id = "product-container" class="price-product">$${item.price}</div>
             
             <div id="quatity-product" class="quantity-product">
             <ion-icon id="btnPrev" class ="arrowBtn" name="arrow-back-circle-outline"></ion-icon><span id="btnForNumbers" class="spanInCart">${item.inCart}</span><ion-icon id="btnNxt" class="arowForward" name="arrow-forward-circle-outline"></ion-icon>
             </div>
 
             <div id ="total" class="total">
-            $${item.inCart * item.price},00
+            $${item.inCart * item.price}
             </div>
 
             
@@ -454,7 +454,7 @@ function shoppingCart(){
             basket Total
             </h4>
             <h4 class="basketTotal">
-            $${cartCost},00
+            $${cartCost}
             </h4>
         </div>
 
@@ -481,17 +481,27 @@ add.addEventListener('click', function() {
     integer+=1;
     int.innerHTML= integer;
 
-    let btnValue = document.getElementById('btnForNumbers');
-    let ValueModified = document.getElementById('total');
+    let btnValue = document.getElementById('btnForNumbers').innerText;
+    let ValueModified = document.getElementById('total').innerText;
 
-    console.log(btnValue);
-    console.log(ValueModified);
+    //console.log(btnValue);
+    //console.log(ValueModified);
 
     if (integer >= 1){
         let remove = document.getElementById("btnPrev").style.display= "block";
-        let sum = products.price * btnValue;
-        console.log(sum);
-        //ValueModified.innerHTML= `${products.price * btnValue}`;
+        let currency = ValueModified;
+        let numberCurrency = Number(currency.replace(/[^0-9.-]+/g,""));
+        let numberValue = btnValue;
+        let numberValueCurrency = Number(numberValue.replace(/[^0-9.-]+/g,"")); 
+
+        let basePrice = products[0].price;
+        console.log(basePrice);
+        
+        let sumProducts= numberValueCurrency * numberCurrency;
+        console.log(sumProducts);
+        //document.getElementById('total').innerHTML = sumProducts;
+
+        
         
     }
 }
@@ -501,9 +511,18 @@ remove.addEventListener('click', function() {
 
     integer-=1;
     int.innerHTML = integer;
+    let btnValue = document.getElementById('btnForNumbers').innerText;
+    let ValueModified = document.getElementById('total').innerText;
+
     if (integer <= 1){
         let remove = document.getElementById("btnPrev").style.display= "none";
 
+        let currency = ValueModified;
+        let numberCurrency = Number(currency.replace(/[^0-9.-]+/g,""));
+        let numberValue = btnValue;
+        let numberValueCurrency = Number(numberValue.replace(/[^0-9.-]+/g,"")); 
+
+        ValueModified= numberCurrency / numberValueCurrency;
     }
 
 })
@@ -529,4 +548,6 @@ console.log(closeBtn);
          btnClicked.parentElement.parentElement.parentElement.remove();
      })
  }
+
+
 
