@@ -424,12 +424,12 @@ function shoppingCart(){
     let cartCost = localStorage.getItem('totalCost');
 
     if(cartItems && productContainer){
-       productContainer.innerHTML = 'Shopping Cart:';
        Object.values(cartItems).map(item =>{
         productContainer.innerHTML += `
+        <h1>Shopping Cart</h1>
             <div class ="shoppingCartCSS">
             <div id = "product-title" class="product">
-            <ion-icon name="close-circle-outline"></ion-icon>
+            <ion-icon class="delete" name="close-circle-outline"></ion-icon>
             <img class="imgShoppingCart" src="../images/${item.collection}/${item.imgSourceName}.png">
             <span>${item.name}</span>
             </div>
@@ -437,14 +437,14 @@ function shoppingCart(){
             <div  id = "product-container" class="price-product">$${item.price},00</div>
             
             <div id="quatity-product" class="quantity-product">
-            <ion-icon name="arrow-back-circle-outline"></ion-icon><span class="spanInCart">${item.inCart}</span><ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            <ion-icon id="btnPrev" class ="arrowBtn" name="arrow-back-circle-outline"></ion-icon><span id="btnForNumbers" class="spanInCart">${item.inCart}</span><ion-icon id="btnNxt" class="arowForward" name="arrow-forward-circle-outline"></ion-icon>
             </div>
 
             <div id ="total" class="total">
             $${item.inCart * item.price},00
             </div>
 
-            </div>
+            
         `;
        });
 
@@ -457,6 +457,10 @@ function shoppingCart(){
             $${cartCost},00
             </h4>
         </div>
+
+        
+
+        
         `
     }
 }
@@ -464,61 +468,65 @@ function shoppingCart(){
 onLoadCartNumbers();
 shoppingCart();
 
-// stop add to shoppingCart
+//-----------function for prev and nxt button-----------
+let add = document.getElementById("btnNxt");
+let remove = document.getElementById("btnPrev");
 
-// start add to wishList
-//carts
+let int = document.getElementById('btnForNumbers');
+var integer = 1;
+let totalCartCost = document.getElementById('total');
 
-let wishList = document.querySelectorAll('.card-wishlist');
+add.addEventListener('click', function() {
 
-for (let i=0; i < wishList.length; i++) {
-    wishList[i].addEventListener('click', () => {
-        cartNumbers(products[i]);
-        totalCost(products[i]);
-    })
-}
+    integer+=1;
+    int.innerHTML= integer;
 
-function onLoadCartNumbers() {
-    let productNumbers = localStorage.getItem('cartNumbersWishList');
+    let btnValue = document.getElementById('btnForNumbers');
+    let ValueModified = document.getElementById('total');
 
-    if(productNumbers){
-        document.getElementById('span').textContent=productNumbers;
-   }
-}
+    console.log(btnValue);
+    console.log(ValueModified);
 
-function cartNumbers(product) {
-    let productNumbers = localStorage.getItem('cartNumbersWishList');
-    productNumbers = parseInt(productNumbers);
-    
-    if(productNumbers) {
-        localStorage.setItem('cartNumbersWishList', productNumbers + 1);
-        document.getElementById('span').textContent=productNumbers + 1;
-    }  else{
-        localStorage.setItem('cartNumbersWishList', 1);
-        document.getElementById('span').textContent = 1;
+    if (integer >= 1){
+        let remove = document.getElementById("btnPrev").style.display= "block";
+        let sum = products.price * btnValue;
+        console.log(sum);
+        //ValueModified.innerHTML= `${products.price * btnValue}`;
+        
     }
-    setItems(product);
 }
+)
 
-function setItems(product){
-    let cartItems = localStorage.getItem('productsInWishList');
-    cartItems = JSON.parse(cartItems);
+remove.addEventListener('click', function() {
 
-    if(cartItems != null){
-        if(cartItems[product.name] == undefined){
-            cartItems = {
-                ...cartItems,
-                [product.name]: product
-            }
-        }
-        cartItems[product.name].inCart +=1;
-    } else{
-        product.inCart = 1;
-    cartItems = {
-        [product.name]: product
+    integer-=1;
+    int.innerHTML = integer;
+    if (integer <= 1){
+        let remove = document.getElementById("btnPrev").style.display= "none";
+
     }
-    }
-    
-    localStorage.setItem("productsInWishList", JSON.stringify(cartItems));
-}
+
+})
+
+
+
+
+//----------------------------------------
+
+
+//-----------function for delete button-----------
+
+
+
+let closeBtn=document.getElementsByClassName('delete');
+
+console.log(closeBtn);
+ for(let i = 0; i < closeBtn.length; i++){
+     let button = closeBtn[i];
+     button.addEventListener('click', function(event) {
+         let btnClicked = event.target;
+         //let productsInShop = localStorage.getItem('productsInShoppingCart');
+         btnClicked.parentElement.parentElement.parentElement.remove();
+     })
+ }
 
