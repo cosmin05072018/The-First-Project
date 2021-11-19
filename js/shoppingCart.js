@@ -485,7 +485,7 @@ add.addEventListener('click', function() {
     let ValueModified = document.getElementById('total').innerText;
 
     //console.log(btnValue);
-    //console.log(ValueModified);
+    console.log(ValueModified);
 
     if (integer >= 1){
         let remove = document.getElementById("btnPrev").style.display= "block";
