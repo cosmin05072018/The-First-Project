@@ -550,7 +550,7 @@ console.log(closeBtn);
      })
  }
 let nr = 123;
- console.log(nr);
+ console.log(nr + 1);
 
 
 
