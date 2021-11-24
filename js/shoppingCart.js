@@ -530,7 +530,7 @@ remove.addEventListener('click', function() {
 
 
 
-//----------------------------------------
+//---
 
 
 //-----------function for delete button-----------
