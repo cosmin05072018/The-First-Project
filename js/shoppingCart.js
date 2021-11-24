@@ -549,8 +549,8 @@ console.log(closeBtn);
          btnClicked.parentElement.parentElement.parentElement.remove();
      })
  }
-
- console.log(123);
+let nr = 123;
+ console.log(nr);
 
 
 
