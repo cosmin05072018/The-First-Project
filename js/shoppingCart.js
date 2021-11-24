@@ -530,7 +530,8 @@ remove.addEventListener('click', function() {
 
 
 
-//---
+//------
+
 
 
 //-----------function for delete button-----------
@@ -548,6 +549,8 @@ console.log(closeBtn);
          btnClicked.parentElement.parentElement.parentElement.remove();
      })
  }
+
+ console.log(123);
 
 
 
