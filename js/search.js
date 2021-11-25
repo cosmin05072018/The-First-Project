@@ -53,6 +53,8 @@ searchInput.addEventListener("input", (event) => {
   document.getElementById("list").style.marginTop = "40px";
   document.getElementById("list").style.padding = "10px";
   document.getElementById("list").style.display = "block";
+  document.getElementById("list").style.cursor = "pointer";
+
 
   if (value && value.trim().length > 0) {
     value = value.trim().toLowerCase();
