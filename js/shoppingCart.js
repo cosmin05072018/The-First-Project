@@ -67,7 +67,7 @@ let products = [
   },
   {
     collection: "women",
-    name: "Bluză 'Kendra'",
+    name: "Bluză",
     price: 44,
     inCart: 0,
     imgSourceName: "cart10",

@@ -151,7 +151,7 @@ const womenProducts = [
   },
   {
     collection: "women",
-    name: "Bluză 'Kendra'",
+    name: "Bluză",
     price: 44,
     inCart: 0,
     imgSourceName: "cart10",
@@ -393,7 +393,7 @@ function renderProductDetails(data) {
   productTitle.innerText = data.name;
 
   let productPrice = document.createElement("span");
-  productPrice.innerText = `Pret: ${data.price} RON`;
+  productPrice.innerText = `Price: ${data.price} $`;
 
   productInfo.appendChild(productTitle);
   productInfo.appendChild(productPrice);
