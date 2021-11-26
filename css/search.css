@@ -9,6 +9,7 @@
     font-weight: 400;
     margin-bottom: 40px;
     padding: 0 10vw;
+    cursor: pointer;
 }
 
 .heading span{
@@ -20,5 +21,6 @@
     grid-template-columns: repeat(4, 1fr);
     height: auto;
     grid-row-gap: 40px;
+    
 }
 
