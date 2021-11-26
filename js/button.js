@@ -65,5 +65,3 @@ for (let i = 0; i < closeBtn.length; i++) {
     btnClicked.parentElement.parentElement.remove();
   });
 }
-let nr = 123;
-console.log(nr + 34);

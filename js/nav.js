@@ -12,6 +12,7 @@ const createNav = () =>{
             <img src="../images/user.png" id="user-img" alt="">
              <div class="login-logout-popup hide">
                 <p class="account-info">Hello,  <span id="result"></span></p>
+                <button class="btnForLogIn" id="user-btn" onclick="window.location ='../html/SignUp.html'">Log in</button>
                 <button class="btn" id="user-btn">Log out</button>
              </div>
         </a>
@@ -28,6 +29,7 @@ const createNav = () =>{
     <li class="link-item"><a href="productsAccessories.html" class="link">accessories</a></li>
 </ul>
    `;
+
 }
 createNav();
 
