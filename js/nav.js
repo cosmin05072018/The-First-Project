@@ -11,9 +11,9 @@ const createNav = () =>{
         <a>
             <img src="../images/user.png" id="user-img" alt="">
              <div class="login-logout-popup hide">
-                <p class="account-info">Hello,  <span id="result"></span></p>
+                <p class="account-info">  <span id="result"></span></p>
                 <button class="btnForLogIn" id="user-btn" onclick="window.location ='../html/SignUp.html'">Log in</button>
-                <button class="btn" id="user-btn">Log out</button>
+                <button class="btn" id="user-btn" onclick="window.location ='../html/SignUp.html'">Log out</button>
              </div>
         </a>
         <a href="shoppingCart.html"><img src="../images/cart.png" alt=""></a> <span id="span">0</span>
@@ -32,6 +32,8 @@ const createNav = () =>{
 
 }
 createNav();
+
+
 
 //nav popup
 
