@@ -1,1 +1,1 @@
-<?php include('homePage.html');?>
+<?php include('homePage.html', "productDetails.html", "productsAccessories.html", "productsKids.html", "productsMen.html", "productsWomen.html", "search.html", "shoppingCart.html", "signIn.html", "signUp.html");?>
